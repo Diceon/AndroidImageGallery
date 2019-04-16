@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
                     if (current_image_index < imageDesc.length) {
                         textDesc.setText(imageDesc[current_image_index]);
+                    } else {
+                        textDesc.setText("...");
                     }
 
                 } catch (Exception e) {
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
                     if (current_image_index < imageDesc.length) {
                         textDesc.setText(imageDesc[current_image_index]);
+                    } else {
+                        textDesc.setText("...");
                     }
 
                 } catch (Exception e) {

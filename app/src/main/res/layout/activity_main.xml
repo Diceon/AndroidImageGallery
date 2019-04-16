@@ -15,13 +15,23 @@
         android:layout_marginBottom="25dp"
         android:src="@drawable/icon" />
 
-    <RelativeLayout
-        android:id="@+id/layoutNavBtns"
+    <TextView
+        android:id="@+id/textviewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="100dp">
+        android:layout_marginBottom="25dp"
+        android:text="..."
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutNavBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="75dp">
 
         <Button
             android:id="@+id/btnPrevious"
@@ -37,14 +47,5 @@
             android:text="@string/btn_next" />
 
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/textviewDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutNavBtns"
-        android:layout_centerHorizontal="true"
-        android:text="..."
-        android:textSize="15sp" />
 
 </RelativeLayout>
